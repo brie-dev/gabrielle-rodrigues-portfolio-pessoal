@@ -79,6 +79,7 @@ ul li, a{
 /* SOBRE */
 .sobre{
     padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(192, 95, 95, 0.616);
 }
 .sobre .flex{
     align-items: center;
@@ -111,10 +112,90 @@ ul li, a{
 /* FIM FORMAÇÃO */
 
 /* PORTFOLIO */
-
+.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(192, 95, 95, 0.616);
+}
+.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: rgb(192, 95, 95);
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+.img-port:hover{
+    background-position: 100% 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(192, 95, 95, 0.438);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
 /* FIM PORTFOLIO */
 
 /* CONTATO */
+.contato{
+    padding: 80px 4%;
+    max-width: 1280px;
+    margin: 0 auto; 
+}
+.contato-texto{
+    margin-bottom: 60px;
+}
+.contato .contato-texto{
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    font-size: 3rem;
+    color: white;
+    margin-top: -30px;
+}
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+input, textarea{
+    width: 100%;
+    background-color: #e2e2e2;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px black;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
 /* FIM CONTATO */
 
 /* RODAPÉ */
